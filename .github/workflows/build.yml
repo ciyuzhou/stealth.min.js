@@ -3,7 +3,7 @@ name: Node.js CI
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 16 */7 * *'#每7天0点执行
+    - cron: '0 16 */7 * *'#北京时间每7天0点执行
 
 jobs:
   build:
