@@ -3,7 +3,7 @@ name: Node.js CI
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 6 * * 1'
+    - cron: '0 16 */7 * *'#每7天0点执行
 
 jobs:
   build:
@@ -39,4 +39,4 @@ jobs:
           ref: 'main'
           message: 'Auto-updated stealth.min.js with newest evasions'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
